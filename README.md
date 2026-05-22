@@ -229,6 +229,7 @@ All DTOs extend `Spatie\LaravelData\Data`. Properties are `readonly`.
 | `country_name` | `string` |
 | `country_code` | `string` |
 | `price` | `?float` |
+| `estimated_cost` | `?float` |
 | `currency_code` | `?string` |
 | `is_promotion` | `bool` |
 | `original_price` | `?float` |

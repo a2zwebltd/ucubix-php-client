@@ -12,6 +12,7 @@ class CountryPrice extends Data
         public readonly string $country_name,
         public readonly string $country_code,
         public readonly ?float $price,
+        public readonly ?float $estimated_cost,
         public readonly ?string $currency_code,
         public readonly bool $is_promotion,
         public readonly ?float $original_price,

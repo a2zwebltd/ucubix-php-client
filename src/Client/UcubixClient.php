@@ -450,6 +450,7 @@ class UcubixClient
                         country_name: $c['country_name'],
                         country_code: $c['country_code'],
                         price: $c['price'] !== null ? (float) $c['price'] : null,
+                        estimated_cost: isset($c['estimated_cost']) ? (float) $c['estimated_cost'] : null,
                         currency_code: $c['currency_code'],
                         is_promotion: $c['is_promotion'],
                         original_price: $c['original_price'] !== null ? (float) $c['original_price'] : null,

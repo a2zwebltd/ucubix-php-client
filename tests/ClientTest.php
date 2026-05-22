@@ -157,7 +157,7 @@ class ClientTest extends TestCase
                         'created_at' => '2024-01-01T00:00:00.000000Z',
                         'regional_pricing' => [
                             ['region_code' => 'NA', 'reseller_wsp' => 75, 'countries' => [
-                                ['country_name' => 'US', 'country_code' => 'us', 'price' => 49.99, 'currency_code' => 'USD', 'is_promotion' => false, 'original_price' => 49.99, 'promotion_name' => null, 'promotion_end_date' => null, 'can_be_ordered' => true, 'in_stock' => true],
+                                ['country_name' => 'US', 'country_code' => 'us', 'price' => 49.99, 'estimated_cost' => 37.49, 'currency_code' => 'USD', 'is_promotion' => false, 'original_price' => 49.99, 'promotion_name' => null, 'promotion_end_date' => null, 'can_be_ordered' => true, 'in_stock' => true],
                             ]],
                         ],
                         'metadata' => null,
