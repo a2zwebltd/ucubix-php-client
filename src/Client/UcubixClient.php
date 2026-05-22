@@ -231,7 +231,7 @@ class UcubixClient
         return $this->parsePaginatedResponse($response, fn(array $item) => $this->parseOrderItem($item));
     }
 
-    public function createOrder(string $productUuid, int $quantity, string $regionCode, ?string $countryCode = null): Order
+    public function createOrder(string $productUuid, int $quantity, string $regionCode, ?string $countryCode = null, ?string $externalReference = null): Order
     {
         $body = [
             'product_uuid' => $productUuid,
@@ -241,6 +241,10 @@ class UcubixClient
 
         if ($countryCode !== null) {
             $body['country_code'] = $countryCode;
+        }
+
+        if ($externalReference !== null) {
+            $body['external_reference'] = $externalReference;
         }
 
         $response = $this->post('orders', $body);
